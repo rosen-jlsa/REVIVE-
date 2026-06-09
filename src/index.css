@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", "Georgia", "Times New Roman", serif;
+  --font-sans: "Montserrat", "Helvetica Neue", "Arial", sans-serif;
+  --color-pearl: #F7F6F3;
+  --color-charcoal: #1C1C1C;
+  --color-ivory: #EDE6D9;
+  --color-grey: #A7A7A7;
+}
+
+/* Custom global styles to maintain the high-contrast classic editorial layout */
+body {
+  background-color: #F7F6F3;
+  color: #1C1C1C;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Force sharp borders on everything to achieve the Bold Typography physical structure */
+*, *::before, *::after {
+  border-radius: 0px !important;
+}
+
+/* Custom scrollbars to look clinical and slim */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F6F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #A7A7A7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1C1C1C;
+}
+
+/* Custom utility class for custom font face Georgia/Playfair and Arial */
+.font-cinzel {
+  font-family: var(--font-serif);
+}
+.font-montserrat {
+  font-family: var(--font-sans);
+}
+
