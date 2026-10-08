@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# REVIVE Product Page Prototype
 
-# Run and deploy your AI Studio app
+A private React and TypeScript prototype for a REVIVE eye serum product page. Project metadata describes a Shopify 2.0 product-page concept; this repository contains the Vite prototype and design assets rather than a complete Shopify theme.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/fdf5508b-4997-483c-995d-11940fda3c0a
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+Vite is configured for port 3000. Use `npm run build` for a production bundle and `npm run lint` for the TypeScript check. Review `.env.example` for any environment variables needed by integrations.
 
-**Prerequisites:**  Node.js
+## Structure
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `src/` — React components and assets.
+- `metadata.json` — project concept and capability notes.
+- `vite.config.ts` — Vite configuration.
