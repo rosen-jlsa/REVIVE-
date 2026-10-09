@@ -19,7 +19,7 @@ From this repository's root, run `python -m http.server 8765` and open `http://l
 
 ## Add to an unpublished Shopify theme
 
-1. Copy `assets/concept-page.css`, `assets/revive-hero.png`, `assets/revive-detail.png`, `sections/revive-concept-product.liquid`, and `templates/product.revive-concept.json` to the same paths in the theme.
+1. Copy `assets/concept-page.css`, the three `assets/revive-*.png` images, `sections/revive-concept-product.liquid`, and `templates/product.revive-concept.json` to the same paths in the theme.
 2. In Shopify Admin, assign the `revive-concept` template to a **test product**.
 3. Open the unpublished theme editor. Edit the section copy and optionally select replacement images through its image settings.
 4. Preview desktop and mobile layouts. Check variant prices, inventory, cart behavior and all product copy before using the page for a real product.
@@ -33,7 +33,7 @@ The concept imagery contains generic packaging. Replace it with approved product
 | `sections/revive-concept-product.liquid` | Shopify section and product form |
 | `templates/product.revive-concept.json` | Online Store 2.0 product template |
 | `assets/concept-page.css` | Responsive visual system |
-| `assets/revive-hero.png`, `assets/revive-detail.png` | AI-generated concept imagery |
+| `assets/revive-hero.png`, `assets/revive-detail.png`, `assets/revive-product.png` | AI-generated concept imagery |
 | `preview/index.html` | Standalone visual preview |
 | `src/` | Earlier React/Vite prototype, retained as project history |
 
@@ -41,5 +41,6 @@ The concept imagery contains generic packaging. Replace it with approved product
 
 - Hero: generic frosted ivory serum bottle on limestone, warm plaster, soft morning light, negative space, no text or logo.
 - Detail: serum droplets, ivory linen and pale stone in warm window light, no packaging or claims.
+- Product: generic frosted ivory serum bottle on limestone, soft studio light, no label or claims.
 
 The images were created with the built-in image generation tool and saved in `assets/` for this project.

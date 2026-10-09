@@ -60,7 +60,7 @@
         {% elsif product != blank and product.featured_image != blank %}
           {{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '500, 800, 1200', alt: product.title, class: 'product-image-main' }}
         {% else %}
-          <img src="{{ 'revive-detail.png' | asset_url }}" alt="Concept image of serum texture" loading="lazy" width="1254" height="1254">
+          <img src="{{ 'revive-product.png' | asset_url }}" alt="Generic concept serum bottle on limestone" loading="lazy" width="1254" height="1254">
         {% endif %}
       </div>
       <div class="product-copy">
