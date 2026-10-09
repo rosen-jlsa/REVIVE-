@@ -17,7 +17,11 @@ The work reflects my focus on clean landing pages, mobile layouts and Shopify th
 
 From this repository's root, run `python -m http.server 8765` and open `http://localhost:8765/preview/`. The preview is visual only; Shopify pricing, inventory and cart actions require a Shopify product template.
 
-## Add to an unpublished Shopify theme
+## Upload as an unpublished Shopify theme
+
+Run `shopify theme package` from the repository root. Upload the resulting ZIP in Shopify Admin → Online Store → Themes → Add theme → Upload zip file. The theme includes a home page, product page, cart and 404 page. Keep it unpublished while reviewing the concept. A packaged copy is also provided separately with this project handoff.
+
+## Add to an existing unpublished theme
 
 1. Copy `assets/concept-page.css`, the three `assets/revive-*.png` images, `sections/revive-concept-product.liquid`, and `templates/product.revive-concept.json` to the same paths in the theme.
 2. In Shopify Admin, assign the `revive-concept` template to a **test product**.
@@ -35,6 +39,7 @@ The concept imagery contains generic packaging. Replace it with approved product
 | `assets/concept-page.css` | Responsive visual system |
 | `assets/revive-hero.png`, `assets/revive-detail.png`, `assets/revive-product.png` | AI-generated concept imagery |
 | `preview/index.html` | Standalone visual preview |
+| `layout/theme.liquid`, `templates/`, `config/`, `locales/` | Minimal uploadable Shopify theme structure |
 | `src/` | Earlier React/Vite prototype, retained as project history |
 
 ## Concept image prompts
