@@ -1,7 +1,7 @@
 {{ 'concept-page.css' | asset_url | stylesheet_tag }}
 
 <section class="concept-page" id="revive-{{ section.id }}">
-  <div class="notice">Concept storefront · design and development portfolio</div>
+  <div class="notice">Independent Shopify design concept · No product is for sale here</div>
   <div class="wrap topbar">
     <a class="wordmark" href="#revive-{{ section.id }}" aria-label="REVIVE, back to top">REVIVE</a>
     <a class="toplink" href="#revive-product-{{ section.id }}">Explore the concept</a>
@@ -11,7 +11,7 @@
     {% if section.settings.hero_image != blank %}
       {{ section.settings.hero_image | image_url: width: 2200 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '750, 1100, 1500, 2200', alt: 'Minimal skincare bottle on warm limestone' }}
     {% else %}
-      <img src="{{ 'revive-hero.png' | asset_url }}" alt="Minimal skincare bottle on warm limestone" loading="eager" fetchpriority="high" width="1672" height="940">
+      <img src="{{ 'revive-hero.jpg' | asset_url }}" alt="Minimal skincare bottle on warm limestone" loading="eager" fetchpriority="high" width="1672" height="940">
     {% endif %}
     <div class="wrap hero-copy">
       <div class="eyebrow">{{ section.settings.eyebrow | escape }}</div>
@@ -31,7 +31,7 @@
       {% if section.settings.detail_image != blank %}
         {{ section.settings.detail_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '500, 800, 1200', alt: 'Serum texture on linen and stone' }}
       {% else %}
-        <img src="{{ 'revive-detail.png' | asset_url }}" alt="Serum texture on linen and stone" loading="lazy" width="1254" height="1254">
+        <img src="{{ 'revive-detail.jpg' | asset_url }}" alt="Serum texture on linen and stone" loading="lazy" width="1254" height="1254">
       {% endif %}
     </div>
     <div class="split-copy">
@@ -60,7 +60,7 @@
         {% elsif product != blank and product.featured_image != blank %}
           {{ product.featured_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '500, 800, 1200', alt: product.title, class: 'product-image-main' }}
         {% else %}
-          <img src="{{ 'revive-product.png' | asset_url }}" alt="Generic concept serum bottle on limestone" loading="lazy" width="1254" height="1254">
+          <img src="{{ 'revive-product.jpg' | asset_url }}" alt="Generic concept serum bottle on limestone" loading="lazy" width="1254" height="1254">
         {% endif %}
       </div>
       <div class="product-copy">
@@ -114,14 +114,14 @@
   "settings": [
     { "type": "image_picker", "id": "hero_image", "label": "Hero image (optional)" },
     { "type": "image_picker", "id": "detail_image", "label": "Detail image (optional)" },
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "A quieter kind of skincare" },
-    { "type": "text", "id": "hero_heading", "label": "Hero heading", "default": "The beauty of less." },
-    { "type": "text", "id": "hero_text", "label": "Hero text", "default": "A considered product page concept built around clarity, texture and an effortless shopping journey." },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "A skincare storefront concept" },
+    { "type": "text", "id": "hero_heading", "label": "Hero heading", "default": "A fresh perspective on the everyday." },
+    { "type": "text", "id": "hero_text", "label": "Hero text", "default": "REVIVE imagines a calm, confident product experience where imagery, typography and useful information do the work." },
     { "type": "text", "id": "hero_button", "label": "Hero button", "default": "Explore the concept" },
-    { "type": "text", "id": "intro_heading", "label": "Introduction heading", "default": "Skincare, presented with intention." },
-    { "type": "textarea", "id": "intro_text", "label": "Introduction text", "default": "REVIVE explores a more focused product experience: editorial imagery, thoughtful spacing and a layout that feels as calm on mobile as it does on desktop." },
-    { "type": "text", "id": "story_heading", "label": "Story heading", "default": "A moment to slow down." },
-    { "type": "textarea", "id": "story_text", "label": "Story text", "default": "A tactile visual language brings the concept to life without relying on invented clinical claims or fabricated reviews." }
+    { "type": "text", "id": "intro_heading", "label": "Introduction heading", "default": "Less noise. More clarity." },
+    { "type": "textarea", "id": "intro_text", "label": "Introduction text", "default": "A product page should feel effortless to explore. This concept pairs an editorial visual language with a practical path from first glance to product details." },
+    { "type": "text", "id": "story_heading", "label": "Story heading", "default": "Warm light. Tactile surfaces." },
+    { "type": "textarea", "id": "story_text", "label": "Story text", "default": "A restrained visual language lets the product story lead." }
   ],
   "presets": [{ "name": "REVIVE concept product" }]
 }

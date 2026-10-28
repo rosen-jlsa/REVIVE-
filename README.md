@@ -2,14 +2,14 @@
 
 A minimal, responsive Shopify product-page concept for a fictional skincare brand. This is a **portfolio project**, not a live product or a claim about clinical performance.
 
-![REVIVE editorial hero](assets/revive-hero.png)
+![REVIVE editorial hero](assets/revive-hero.jpg)
 
 ## What I built
 
 - An Online Store 2.0 product section in Liquid, with editable copy and image settings.
 - A matching JSON product template that can be assigned to a test product.
 - A responsive editorial layout with original concept imagery, clear product information and a Shopify variant/cart form when a product is assigned.
-- A static [browser preview](preview/index.html) for reviewing the visual design without a Shopify store.
+- A rebuilt [browser preview](preview/index.html) for reviewing the visual design without a Shopify store.
 
 The work reflects my focus on clean landing pages, mobile layouts and Shopify theme customization. AI-assisted tools helped with image creation and implementation; the concept, layout, editing and integration were reviewed as a portfolio exercise.
 
@@ -37,7 +37,7 @@ The concept imagery contains generic packaging. Replace it with approved product
 | `sections/revive-concept-product.liquid` | Shopify section and product form |
 | `templates/product.revive-concept.json` | Online Store 2.0 product template |
 | `assets/concept-page.css` | Responsive visual system |
-| `assets/revive-hero.png`, `assets/revive-detail.png`, `assets/revive-product.png` | AI-generated concept imagery |
+| `assets/revive-hero.jpg`, `assets/revive-detail.jpg`, `assets/revive-product.jpg` | AI-generated concept imagery |
 | `preview/index.html` | Standalone visual preview |
 | `layout/theme.liquid`, `templates/`, `config/`, `locales/` | Minimal uploadable Shopify theme structure |
 | `src/` | Rebuilt React/Vite design preview; the Shopify Liquid files remain the deployable theme deliverable |
