@@ -40,7 +40,7 @@ The concept imagery contains generic packaging. Replace it with approved product
 | `assets/revive-hero.png`, `assets/revive-detail.png`, `assets/revive-product.png` | AI-generated concept imagery |
 | `preview/index.html` | Standalone visual preview |
 | `layout/theme.liquid`, `templates/`, `config/`, `locales/` | Minimal uploadable Shopify theme structure |
-| `src/` | Earlier React/Vite prototype, retained as project history |
+| `src/` | Rebuilt React/Vite design preview; the Shopify Liquid files remain the deployable theme deliverable |
 
 ## Concept image prompts
 
@@ -49,3 +49,7 @@ The concept imagery contains generic packaging. Replace it with approved product
 - Product: generic frosted ivory serum bottle on limestone, soft studio light, no label or claims.
 
 The images were created with the built-in image generation tool and saved in `assets/` for this project.
+
+## Rebuilt frontend preview
+
+Run `npm install` and `npm run dev` to view the redesigned responsive React concept. This preview is separate from the Shopify Liquid theme and contains no simulated checkout or unverified customer and health claims. Run `npm run lint` and `npm run build` to verify it.
